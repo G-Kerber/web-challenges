@@ -97,4 +97,6 @@ body {
   justify-content: center;
   position: fixed;
   z-index: 10;
+  bottom: 60px;
+  left: 10px;
 }
