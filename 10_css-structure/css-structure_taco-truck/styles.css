@@ -1,11 +1,13 @@
 @import "./theme.css";
+@import "./components/header.css";
+@import "./components/main-content.css";
+@import "./components/cards.css";
 
 /* -------------------------------------------------------- */
 /* Global Styles */
 /* -------------------------------------------------------- */
-
-*::before,
-*::after {
+*: : before,
+  *: : after {
   box-sizing: border-box;
 }
 
@@ -30,7 +32,6 @@ body {
   margin: 0;
 }
 
-
 .main-content {
   background: var(--main-bg);
   padding: 20px;
@@ -50,7 +51,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
- 
 }
 
 .card {
@@ -61,7 +61,7 @@ body {
   color: var(--card-text);
   padding: 20px;
   border-radius: 5px;
-  min-width: 300px; 
+  min-width: 300px;
   flex: 1 1 30%;
 }
 
