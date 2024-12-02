@@ -4,6 +4,8 @@
 play around with the concepts you've learned. Read the instructions 
 carefully. */
 
+@import "../components/box-five.css";
+
 :root {
   /* Color Variables */
 
@@ -95,12 +97,4 @@ h1 {
   }
   width: 100px;
   height: 100px;
-}
-
-.box--five {
-  width: 100%;
-}
-
-.box--five img {
-  width: 100%;
 }
