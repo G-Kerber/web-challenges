@@ -1,3 +1,5 @@
+@import "./theme.css";
+
 *,
 *::before,
 *::after {
@@ -11,7 +13,7 @@ body {
 }
 
 header {
-  background: rgb(37 38 41 / 100%);
+  background: var(--color-granite);
 }
 
 h1 {
@@ -29,7 +31,7 @@ h2 {
 }
 
 strong {
-  color: #ff4a11;
+  color: var(--color-nemo);
 }
 
 section {
