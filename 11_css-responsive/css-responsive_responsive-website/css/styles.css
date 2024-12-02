@@ -239,13 +239,36 @@ body {
 CSS based on conditions such as viewport width, etc. */
 
 /* Media Query Tablet */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .card-section {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    padding: 0 20px;
+    .product-card,
+    .intro-text {
+      width: 100%;
+    }
   }
 }
 
 /* Media Query Desktop */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .product-card,
+  .intro-text {
+    grid-column: span 2;
+  }
+  .--forest {
+    grid-column: 1 / 5;
+    height: 400px;
+  }
+  .--desert {
+    grid-column: 2 / span 2;
+  }
 }
