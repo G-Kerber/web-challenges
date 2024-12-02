@@ -1,4 +1,4 @@
-@import "./theme.css";
+@import "./css/theme.css";
 @import "./components/header.css";
 @import "./components/main-content.css";
 @import "./components/cards.css";
