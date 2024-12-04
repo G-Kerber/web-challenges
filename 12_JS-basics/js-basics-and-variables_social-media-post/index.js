@@ -10,7 +10,14 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+let likes = 0;
+const postContent = {
+  title: "title",
+  text: "text",
+  likes,
+  author: "author",
+  isReported: true,
+};
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +25,6 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+console.log(postContent);
+console.log(likes + 1);
 // --^-- write your code here --^--
