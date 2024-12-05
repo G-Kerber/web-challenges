@@ -79,7 +79,7 @@ buttonAdd5.addEventListener("click", () => {
 });
 
 buttonSub1.addEventListener("click", () => {
-  result = operand1--; //Es wird zuerst immer der zuletzt geklickte Befehl ausgeführt bevor der Wert um 1 reduziert wird. Nur im Fall der Kurzschreibweise -- / ++
+  result = operand1 -= 1;
   console.log(result);
 });
 
