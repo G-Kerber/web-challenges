@@ -15,7 +15,7 @@ const nestedArray = ["example", 10, true, []];
 
 const numbers = [20, 10, 50];
 
-const firstNumber = 20;
+const firstNumber = numbers[0];
 
 // EXERCISE 4
 // Update the first fruit in `fruits` to be "mango" instead of "apple".
@@ -28,7 +28,7 @@ fruits[0] = "mango";
 
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
-const nestedNumber = 40;
+const nestedNumber = nestedNumbers[1][3][1];
 // my first solution: nestedNumbers.push(nestedNumber);
 
 // EXERCISE 6
