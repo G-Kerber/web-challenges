@@ -25,7 +25,25 @@ form.addEventListener("submit", (event) => {
   let result;
 
   // --v-- write your code here --v--
-
+  let a = Number(form.numberA.value);
+  let b = Number(form.numberB.value);
+  let operator = form.operator.value;
+  switch (operator) {
+    case "addition":
+      result = add(a, b);
+      break;
+    case "subtraction":
+      result = subtract(a, b);
+      break;
+    case "multiplication":
+      result = multiply(a, b);
+      break;
+    case "division":
+      result = divide(a, b);
+      break;
+    default:
+      console.log("no operation available");
+  }
   // --^-- write your code here --^--
 
   resultOutput.textContent = result;
