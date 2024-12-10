@@ -23,15 +23,21 @@ function showSuccessMessage() {
 hideTosError();
 hideSuccessMessage();
 
+tosCheckbox.addEventListener("change", (event) => {
+  if (event.target.checked === true) {
+    hideTosError();
+  } else {
+    showTosError();
+  }
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // --v-- write your code here --v--
   if (tosCheckbox.checked === true) {
-    hideTosError();
     showSuccessMessage();
   } else {
-    showTosError();
     hideSuccessMessage();
   }
   // --^-- write your code here --^--
