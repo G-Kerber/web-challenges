@@ -28,13 +28,16 @@ newPostText.classList.add("post__content");
 newPostText.textContent =
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit.";
 
+// footer
 newPost.append(newPostFooter);
 newPostFooter.classList.add("post__footer");
 
+// Username
 newPostFooter.append(newPostUsername);
 newPostUsername.classList.add("post__username");
 newPostUsername.textContent = "@username";
 
+// like-button
 newPostFooter.append(newPostButton);
 newPostButton.classList.add("post__button");
 newPostButton.setAttribute("type", "button");
