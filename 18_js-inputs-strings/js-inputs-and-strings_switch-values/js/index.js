@@ -17,7 +17,7 @@ lowercaseButton.addEventListener("click", () => {
 });
 
 switchCaseButton.addEventListener("click", () => {
-  const parttime = firstInput.value;
+  const tempValue = firstInput.value;
   firstInput.value = SecoundInput.value;
-  SecoundInput.value = parttime;
+  SecoundInput.value = tempValue;
 });
