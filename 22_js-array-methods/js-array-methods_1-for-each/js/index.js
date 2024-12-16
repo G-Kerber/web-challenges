@@ -19,9 +19,13 @@ const colors = [
   "#A5A5A5",
 ];
 
-colors.forEach((currywurst) => {
+colors.forEach((color1) => {
+  renderColorBox(color1);
+});
+
+function renderColorBox(color2) {
   const div = document.createElement("div");
   document.body.append(div);
   div.classList.add("color-box");
-  div.style.backgroundColor = currywurst);
-});
+  div.style.backgroundColor = color2;
+}
