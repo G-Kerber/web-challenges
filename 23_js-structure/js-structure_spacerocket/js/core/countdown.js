@@ -14,6 +14,7 @@ export function countdown() {
       `Countdown too long. Make sure set a countdown length of ${rocket.requiredCountdown} to follow protocol.`
     );
   }
-
+  console.log("vor_", rocket.countdown);
   rocket.countdown++;
+  console.log("nach_", rocket.countdown);
 }

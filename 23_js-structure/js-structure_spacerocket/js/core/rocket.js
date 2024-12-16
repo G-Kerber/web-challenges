@@ -18,8 +18,8 @@ export function getNewRocket() {
 
 export function getRocket() {
   if (!window.rocket) {
-    throw new Error("No rocket found");
+    //throw new Error("No rocket found");
   }
-
+  console.log("test_", window.rocket);
   return window.rocket;
 }
