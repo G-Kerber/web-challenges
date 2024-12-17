@@ -7,7 +7,15 @@ const errorElement = document.querySelector("[data-js='error']");
 async function fetchUserData(url) {
   try {
     const response = await fetch(url);
-
+    const contentType = response.headers.get("content-type");
+    if (contentType != "application/json; charset=utf-8") {
+      throw new Error(
+        `Failed to fetch data! Wrong Content type: ${contentType}`
+      );
+    }
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data! Status Code: ${response.status}`);
+    }
     return await response.json();
   } catch (error) {
     return { error: error.message };
