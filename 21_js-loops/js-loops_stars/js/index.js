@@ -12,12 +12,8 @@ function renderStars(filledStars) {
     const img = document.createElement("img");
     img.addEventListener("click", () => {
       filledStars = stars;
-      console.log("hallo");
-      console.log(filledStars);
-      console.log(stars);
+      renderStars(filledStars);
     });
-    console.log(filledStars);
-    console.log(stars);
     starContainer.append(img);
     if (filledStars >= stars) {
       img.setAttribute("src", "assets/star-filled.svg");
