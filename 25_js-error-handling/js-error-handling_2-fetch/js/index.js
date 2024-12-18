@@ -8,7 +8,7 @@ async function fetchUserData(url) {
   try {
     const response = await fetch(url);
     const contentType = response.headers.get("content-type");
-    if (contentType != "application/json; charset=utf-8") {
+    if (!contentType.includes("application/json")) {
       throw new Error(
         `Failed to fetch data! Wrong Content type: ${contentType}`
       );
