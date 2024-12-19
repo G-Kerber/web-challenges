@@ -9,6 +9,7 @@ Make sure to export your variable as shown in the example below to make the test
 const item = ["Egg", 0.25, 12];
 
 // Example: export const [ value1, value2 ] = array;
+export const [name, price, quantity] = item;
 
 /*
 EXERCISE 2
@@ -16,6 +17,7 @@ Use array destructuring to extract the variables `firstNameOfChris`, `lastNameOf
 */
 
 const personChris = [12, "Chris", "Owen"];
+export const [firstNameOfChris, lastNameOfChris, ageOfChris] = personChris;
 
 /*
 EXERCISE 3
@@ -24,6 +26,7 @@ Ensure no unused variables remain.
 */
 
 const personAlex = ["Alex", 12, "Main"];
+export const [firstNameOfAlex, ageOfAlex, lastNameOfAlex] = personAlex;
 
 /*
 EXERCISE 4
@@ -32,7 +35,7 @@ as variable called `lastName`.
 */
 
 const students = ["Christina", "Jon", "Alexandare"];
-
+export const [, , lastname] = students;
 /*
 EXERCISE 5
 Use array destructuring to extract all names from the nested array `nestedStudents`.
@@ -40,6 +43,8 @@ Assign each name to a variable called "student1" through "student5", in the give
 */
 
 const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
+export const [student1, [student2, student3], [student4, student5]] =
+  nestedStudents;
 
 /*
 EXERCISE 6
