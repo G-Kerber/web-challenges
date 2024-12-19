@@ -26,7 +26,7 @@ Ensure no unused variables remain.
 */
 
 const personAlex = ["Alex", 12, "Main"];
-export const [firstNameOfAlex, ageOfAlex, lastNameOfAlex] = personAlex;
+export const [firstNameOfAlex, , lastNameOfAlex] = personAlex;
 
 /*
 EXERCISE 4
@@ -54,7 +54,8 @@ Keep in mind that you need to export the variable `result` to make the test work
 
 const values = [1, 6, 7, 9, 12, 5, 4];
 
-const result = add(1); // Spread values inside this function call
+export const result = add(...values); // Spread values inside this function call
+console.log("exercise 6_", result);
 
 function add(...values) {
   return values.reduce(
