@@ -1,5 +1,15 @@
 import "./styles.css";
 
 export default function App() {
-  return <div>Replace me with your Component!</div>;
+  return HelloWorldArticle();
+}
+
+function HelloWorldArticle() {
+  return (
+    <div>
+      <h1>Replace me with your Component!</h1>
+      <p>a little text</p>
+      <p>a twice text</p>
+    </div>
+  );
 }
