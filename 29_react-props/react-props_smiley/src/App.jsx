@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
-  return <Smiley isHungry />;
+  return <Smiley isHungry />; //for isHungry=false => isHungry removed
 }
 
 function Smiley({ isHungry }) {
