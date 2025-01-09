@@ -3,8 +3,8 @@ import Form from "./components/Form";
 import { useState } from "react";
 
 export default function App() {
-  const [name, setName] = useState("John Doe");
-  const [email, setEmail] = useState("John@Doe.com");
+  const [name, setName] = useState("Jane Doe");
+  const [email, setEmail] = useState("Jane@Doe.com");
 
   function handleCreateUser(name, email) {
     setName(name);
