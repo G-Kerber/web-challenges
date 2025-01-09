@@ -2,14 +2,14 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
-  return <Smiley isHungry />; //for isHungry=false => isHungry removed
+  return <Smiley isHappy={false} />;
 }
 
-function Smiley({ isHungry }) {
+function Smiley({ isHappy }) {
   return (
     <div>
-      <h1>Challenge: react props - smiley</h1>
-      <p>{isHungry ? "🙂" : "😒"}</p>
+      <h1>react props - challenge Smiley</h1>
+      <p>{isHappy ? "😀" : "😒"}</p>
     </div>
   );
 }
