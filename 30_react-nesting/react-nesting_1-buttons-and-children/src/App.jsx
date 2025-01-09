@@ -5,8 +5,8 @@ export default function App() {
   return (
     <main>
       <Button>Click me!</Button>
-      <Button>I am a Button</Button>
-      <Button>Do not push me!</Button>
+      <Button>I&#39;m a Button</Button>
+      <Button>Don&#39;t push me!</Button>
       <Button>Drück mich!</Button>
     </main>
   );
