@@ -11,7 +11,7 @@ export default function App() {
 }
 function Button({ color, text, disabled }) {
   return (
-    <button type="button" disabled={disabled} style={{ color: { color }, backgroundColor: #006400 }}>
+    <button type="button" disabled={disabled} style={{ color: { color } }}>
       {text}
     </button>
   );
