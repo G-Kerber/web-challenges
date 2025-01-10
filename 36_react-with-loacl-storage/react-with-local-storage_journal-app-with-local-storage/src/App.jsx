@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useLocalStorageState from "use-local-storage-state";
 import "./App.css";
 import EntriesSection from "./components/EntriesSection";
 import EntryForm from "./components/EntryForm";
@@ -37,8 +38,11 @@ const initialEntries = [
 ];
 
 function App() {
-  const [entries, setEntries] = useState(initialEntries);
+  const [entries, setEntries] = useLocalStorageState("entry", {
+    defaultValue: initialEntries,
+  });
   const [filter, setFilter] = useState("all"); // "all" or "favorites"
+  //const [filter, setFilter] = useLocalStorageState("filter", {    defaultValue: "all",  });
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
