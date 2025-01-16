@@ -22,7 +22,7 @@ export default function theFellowshipOfTheRing() {
       <ul>
         {books.map((book) => {
           return (
-            <li>
+            <li key={book.title}>
               {book.ordinal}: {book.title}
             </li>
           );

@@ -13,7 +13,7 @@ export default function HomePage() {
       <ul>
         {volumes.map((volume) => {
           return (
-            <li>
+            <li key={volume.title}>
               <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
             </li>
           );
