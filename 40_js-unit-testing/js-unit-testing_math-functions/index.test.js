@@ -1,5 +1,6 @@
 import { add, subtract, multiply, divide } from ".";
 
+
 test("add two numbers when i called add", () => {
   const numbers = [2, 3];
   const result = add(numbers[0], numbers[1]);
@@ -17,6 +18,25 @@ test("add two floating point number when i called add", () => {
   const result = add(numbers[0], numbers[1]);
   expect(result).toBeCloseTo(0.3);
 });
+
+test("adds two number when called function add()", () => {
+  const result = add(2, 3);
+  expect(result).toBe(5);
+});
+
+test("adds two number when called function add()", () => {
+  const result = add(2, -3);
+  expect(result).toBeLessThan(0);
+});
+
+test("adds two floating point number when called function add()", () => {
+  const result = add(0.1, 0.2);
+  expect(result).toBeCloseTo(0.3);
+});
+
+test("subractration of two number when called function subtract()", () => {
+  const result = subtract(15, 5);
+  expect(result).toBe(10;
 
 test("subtract two numbers when i called subtract", () => {
   const numbers = [15, 5];
@@ -64,4 +84,9 @@ test("divide a number and a 0 when i called divide", () => {
   const numbers = [9, 0];
   const result = divide(numbers[0], numbers[1]);
   expect(result).toBe("You should not do this!");
-});
+
+  
+  
+  
+
+
