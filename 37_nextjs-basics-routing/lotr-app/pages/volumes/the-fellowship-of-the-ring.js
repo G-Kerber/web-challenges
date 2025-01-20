@@ -28,13 +28,7 @@ export default function theFellowshipOfTheRing() {
           );
         })}
       </ul>
-      <Image
-        alt="cover"
-        width={140}
-        height={230}
-        src={`/../public${cover}`}
-        priority
-      />
+      <Image alt="cover" width={140} height={230} src={cover} priority />
       <p>
         {volumesIndex > 0 && (
           <Link href={`/volumes/${volumes[volumesIndex - 1].slug}`}>
