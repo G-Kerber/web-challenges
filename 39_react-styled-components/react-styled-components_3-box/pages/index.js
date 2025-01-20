@@ -4,15 +4,15 @@ import styled from "styled-components";
 
 export default function HomePage() {
   return (
-    <BoxCoontainer>
+    <BoxContainer>
       <BoxWithClassName />
       <BoxWithClassName isBlack />
       <BoxWithStyledComponents />
       <BoxWithStyledComponents $isBlack />
-    </BoxCoontainer>
+    </BoxContainer>
   );
 }
 
-const BoxCoontainer = styled.div`
+const BoxContainer = styled.div`
   display: flex;
 `;
