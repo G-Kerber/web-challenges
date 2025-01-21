@@ -12,16 +12,14 @@ const StyledLights = styled.ul`
 `;
 
 export default function Lights({ lights, toggleLight }) {
-  console.log("lights_", lights);
   return (
     <StyledLights>
       {lights.map((light) => (
         <li key={light.id}>
           <Light
-            id={light.id}
             name={light.name}
             isOn={light.isOn}
-            toggleLight={toggleLight}
+            onToggle={() => toggleLight(light.id)}
           />
         </li>
       ))}
