@@ -1,10 +1,10 @@
 import Link from "../components/Link";
 
-export default function HomePage() {
+export default function HomePage({ lightsOnNumber }) {
   return (
     <div>
       <h1>Home</h1>
-      <p>?? light(s) are on.</p>
+      <p>{lightsOnNumber} light(s) are on.</p>
       <p>
         <Link href="/rooms">All Rooms →</Link>
       </p>
