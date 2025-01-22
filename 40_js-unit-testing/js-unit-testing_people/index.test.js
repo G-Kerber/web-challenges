@@ -71,6 +71,7 @@ test('getNameAndAge() returns an array of formatted strings like this: "Skywalke
 });
 
 test("getPeopleByAge() returns an array of people of a certain age", () => {
+  const age = 27;
   const result = getPeopleByAge(people, age);
   // expect(result).toEqual([]);
 });
