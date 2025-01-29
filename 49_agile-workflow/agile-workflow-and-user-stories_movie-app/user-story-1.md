@@ -5,8 +5,8 @@ list of movie
 ## Value Proposition
 
 **As a** film enthusiasts <br>
-**I want to** a list of both classic and modern movies<br>
-**so that** can easily explore and enjoy their cinematic preferences <br>
+**I want to** see a list of both classic and modern movies<br>
+**so that** i can easily explore and enjoy their cinematic preferences <br>
 
 ## Description
 
